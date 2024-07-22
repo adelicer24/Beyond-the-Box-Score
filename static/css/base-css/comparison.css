@@ -1,0 +1,125 @@
+.main {
+    width: 90%;
+    padding-left: 5%;
+    padding-bottom: 5.1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter {
+    float: left;
+}
+
+.caption {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.header {
+    display: flex;
+    overflow: hidden;
+    height: 70px;
+    background-color: crimson;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+    border-color: black;
+}
+
+.logo {
+    margin-top: 0px;
+}
+
+.header a {
+    position: relative;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 5px;
+    border: 2px solid black;
+}
+
+.header a:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.header a.active {
+    background-color: white;
+    color: black;
+    cursor: not-allowed;
+    border: 3px solid black;
+}
+
+.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0px;
+    margin-top: 15px;
+    font-size: 35px;
+    color: black;
+    padding-left: 2px;
+}
+
+.buttons {
+    position: relative;
+    float: right;
+    margin-top: 25px;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.dropdown {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-bottom: 10px;
+    float: right;
+    width: 90px;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    position: relative;
+    width: 100%;
+}
+
+th {
+    background: crimson;
+    border: 2px solid black;
+    padding: 0.5%;
+    text-align: left;
+    font-size:x-large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+td {
+    text-align: left;
+    background: rgb(235, 235, 235);
+    border: 2px solid black;
+    padding: 0.5%;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: crimson;
+    color: black;
+    font-size: large;
+    height: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-top: 3px;
+    border-top-style: solid;
+    border-color: black;
+}

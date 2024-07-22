@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="/Beyond-the-Box-Score/static/css/stat-css/awards.css">
+    </head>
+
+    <div class="header">
+        <img src="/Beyond-the-Box-Score/static/images/baseball.jpg"
+            width="75" height="75" class="logo"></a>
+
+        <h1 class="h1">
+            Beyond the Box Score
+        </h1>
+
+        <div class="buttons">
+            <a href="/Beyond-the-Box-Score/">Home</a>
+            <a href="/Beyond-the-Box-Score/templates/base-templates/about.html">About</a>
+            <a class="active" href="/Beyond-the-Box-Score/templates/base-templates/statistics.html">Statistics</a>
+            <a href="/Beyond-the-Box-Score/templates/base-templates/comparison.html">Statistic Comparisons</a>
+            <a href="/Beyond-the-Box-Score/templates/base-templates/glossary.html">Statistic Glossary</a>
+        </div>
+    </div>
+
+    <div class="buttons2">
+        <a class="active" href="/Beyond-the-Box-Score/templates/stat-templates/awards.html">Awards</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/batting-std2023.html">Standard Batting</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/batting-adv2023.html">Advanced Batting</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/batting-sab2023.html">Sabermetric Batting</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/fielding-std2023.html">Standard Fielding</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/fielding-adv2023.html">Advanced Fielding</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/pitching-std2023.html">Standard Pitching</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/pitching-adv2023.html">Advanced Pitching</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/2023/pitching-sab2023.html">Sabermetric Pitching</a>
+        <a href="/Beyond-the-Box-Score/templates/stat-templates/teams.html">Teams</a>
+    </div>
+
+    <h1>
+        Award List
+    </h1>
+
+    <div class="main">
+        <div class="filter">
+            <label class="caption" for="year">Filter By Year: </label>
+            
+            <select class="dropdown" id="year" onchange="filterTable()">
+                <option value="all">All</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+        </div>
+                
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th style="width: 2.8%;">Year</th>
+                    <th>ALCS MVP</th>
+                    <th>NLCS MVP</th>
+                    <th>World Series MVP</th>
+                    <th>AL MVP</th>
+                    <th>NL MVP</th>
+                    <th>AL Cy Young Award</th>
+                    <th>NL Cy Young Award</th>
+                    <th>AL Hank Aaron Award</th>
+                    <th>NL Hank Aaron Award</th>
+                    <th>Babe Ruth Award</th>
+                    <th>Edgar Martinez Award</th>
+                    <th>AL Batting Champion</th>
+                    <th>NL Batting Champion</th>
+                    <th>AL Pitching ERA Champion</th>
+                    <th>NL Pitching ERA Champion</th>
+                    <th>AL Rookie of the Year</th>
+                    <th>NL Rookie of the Year</th>
+                    <th>AL Comeback Player of the Year</th>
+                    <th>NL Comeback Player of the Year<br></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023</td>
+                    <td>Adolis Garcia</td>
+                    <td>Ketel Martin</td>
+                    <td>Corey Seager (2)</td>
+                    <td>Shohei Ohtani (2)</td>
+                    <td>Ronald Acuna Jr.</td>
+                    <td>Gerrit Cole</td>
+                    <td>Blake Snell (2)</td>
+                    <td>Shohei Ohtani</td>
+                    <td>Ronald Acuna Jr.</td>
+                    <td>Adolis Garcia</td>
+                    <td>Shohei Ohtani (3)</td>
+                    <td>Yandy Diaz</td>
+                    <td>Luis Arraez (2)</td>
+                    <td>Gerrit Cole (2)</td>
+                    <td>Blake Snell (2)</td>
+                    <td>Gunnar Henderson</td>
+                    <td>Corbin Carroll</td>
+                    <td>Liam Hendriks</td>
+                    <td>Cody Bellinger</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Jeremy Pena</td>
+                    <td>Bryce Harper</td>
+                    <td>Jeremy Pena</td>
+                    <td>Aaron Judge</td>
+                    <td>Paul Goldschmidt</td>
+                    <td>Justin Verlander (3)</td>
+                    <td>Sandy Alcantra</td>
+                    <td>Aaron Judge</td>
+                    <td>Paul Goldschmidt (2)</td>
+                    <td>Jeremy Pena</td>
+                    <td>Shohei Ohtani (2)</td>
+                    <td>Luis Arraez</td>
+                    <td>Jeff McNeil</td>
+                    <td>Justin Verlander (2)</td>
+                    <td>Julio Urias</td>
+                    <td>Julio Rodriguez</td>
+                    <td>Michael Harris II</td>
+                    <td>Justin Verlander</td>
+                    <td>Albert Pujols<br></td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Yordan Alvarez</td>
+                    <td>Eddie Rosario</td>
+                    <td>Jorge Soler</td>
+                    <td>Shohei Ohtani</td>
+                    <td>Bryce Harper (2)</td>
+                    <td>Robbie Ray</td>
+                    <td>Corbin Burns</td>
+                    <td>Vladimir Guerrero Jr.</td>
+                    <td>Bryce Harper (2)</td>
+                    <td>Freddie Freeman</td>
+                    <td>Shohei Ohtani</td>
+                    <td>Yuli Gurriel</td>
+                    <td>Trea Turner</td>
+                    <td>Robbie Ray</td>
+                    <td>Corbin Burns</td>
+                    <td>Randy Arozarena</td>
+                    <td>Jonathan India</td>
+                    <td>Trey Mancini</td>
+                    <td>Buster Posey (2)<br></td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Randy Arozarena</td>
+                    <td>Corey Seager</td>
+                    <td>Corey Seager</td>
+                    <td>Jose Abreu</td>
+                    <td>Freddie Freeman</td>
+                    <td>Shane Bieber</td>
+                    <td>Trevor Bauer</td>
+                    <td>Jose Abreu</td>
+                    <td>Freddie Freeman</td>
+                    <td>Randy Arozarena</td>
+                    <td>Marcel Ozuna</td>
+                    <td>DJ LeMahieu (2)</td>
+                    <td>Juan Soto</td>
+                    <td>Shane Bieber</td>
+                    <td>Trevor Bauer</td>
+                    <td>Kyle Lewis</td>
+                    <td>Devin Williams</td>
+                    <td>N/A</td>
+                    <td>N/A<br></td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Jose Altuve</td>
+                    <td>Howie Kendrick</td>
+                    <td>Stephen Strasburg</td>
+                    <td>Mike Trout (3)</td>
+                    <td>Cody Bellinger</td>
+                    <td>Justin Verlander (2)</td>
+                    <td>Jacob deGrom (2)</td>
+                    <td>Mike Trout (2)</td>
+                    <td>Christian Yelich (2)</td>
+                    <td>Juan Soto and Stephen Strasburg</td>
+                    <td>Nelson Cruz (2)</td>
+                    <td>Tim Anderson</td>
+                    <td>Christian Yelich (2)</td>
+                    <td>Gerrit Cole</td>
+                    <td>Hyun Jin Ryu</td>
+                    <td>Yordan Alvarez</td>
+                    <td>Pete Alonso</td>
+                    <td>Carlos Carrasco</td>
+                    <td>John Donaldson<br></td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>Jackie Bradley Jr.</td>
+                    <td>Cody Bellinger</td>
+                    <td>Steve Pearce</td>
+                    <td>Mookie Betts</td>
+                    <td>Christian Yelich</td>
+                    <td>Blake Snell</td>
+                    <td>Jacob deGrom</td>
+                    <td>J.D Martinez</td>
+                    <td>Christian Yelich</td>
+                    <td>David Price</td>
+                    <td>Khris Davis</td>
+                    <td>Mookie Betts</td>
+                    <td>Christian Yelich</td>
+                    <td>Blake Snell</td>
+                    <td>Jacob deGrom</td>
+                    <td>Shohei Ohtani</td>
+                    <td>Ronald Acuna Jr</td>
+                    <td>David Price</td>
+                    <td>Jonny Venters<br></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            /*Function used to filter the table by year using a dropdown*/
+            function filterTable(){
+                /*Stores the header column that contains the year*/
+                var dropdown=document.getElementById("year");
+
+                /*Stores the value selected in the dropdown*/
+                var selectedValue=dropdown.value;
+                
+                /*Stores the html table*/
+                var table=document.getElementById("myTable");
+                /*Stores all of the rows in the table*/
+                var rows=table.getElementsByTagName("tr");
+
+                /*Loops through the table skipping the header*/
+                for(var i=1;i<rows.length;i++)
+                {
+                    /*Stores each individual row*/
+                    var row=rows[i];
+                    /*Stores the value of the year from the current row*/
+                    var year=row.cells[0].textContent.trim();
+
+                    /*Compares the value of the year based on the the value in the dropdown*/
+                    if(selectedValue==="all" || year===selectedValue)
+                    {
+                        /*If the selected year matches a row, then display that row*/
+                        row.style.display="";
+                    }
+                    else {
+                        /*If the selected year does not match a row, then do not display that row*/
+                        row.style.display="none";
+                    }
+                }
+            }
+        </script>
+
+        <div class="credit">
+            *This awards list was provided by <a href="https://www.baseball-reference.com/bullpen/Baseball_statistics" target="_blank">Baseball Reference</a><br>
+            **Number next to name indicates the number of times an award has been won by a single player
+        </div>
+    </div>
+    
+    <div class="footer">
+        Alex Delicer
+        <br>
+        The College of Wooster
+        <br>
+        Phone: +1 470 429 1104
+        <br>
+        Email: adelicer24@wooster.edu
+    </div>
+</html>

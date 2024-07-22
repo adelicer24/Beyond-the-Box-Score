@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="/Beyond-the-Box-Score/static/css/base-css/comparison.css">
+    </head>
+
+    <div class="header">
+        <img src="/Beyond-the-Box-Score/static/images/baseball.jpg"
+            width="75" height="75" class="logo"></a>
+
+        <h1 class="h1">
+            Beyond the Box Score
+        </h1>
+
+        <div class="buttons">
+            <a href="/Beyond-the-Box-Score/">Home</a>
+            <a href="/Beyond-the-Box-Score/templates/base-templates/about.html">About</a>
+            <a href="/Beyond-the-Box-Score/templates/base-templates/statistics.html">Statistics</a>
+            <a class="active" href="/Beyond-the-Box-Score/templates/base-templates/comparison.html">Statistic Comparisons</a>
+            <a href="/Beyond-the-Box-Score/templates/base-templates/glossary.html">Statistic Glossary</a>
+        </div>
+    </div>
+
+    <h1>
+        Comparison of Statistics
+    </h1>
+
+    <div class="main">
+        <div class="filter">
+            <label class="caption" for="statType">Filter By Statistic Type: </label>
+            <select class="dropdown" id="statType" onchange="filterTable()">
+                <option value="all">All</option>
+                <option value="Award">Award</option>
+                <option value="Batting">Batting</option>
+                <option value="Pitching">Pitching</option>
+                <option value="Team">Team</option>
+            </select>
+        </div>
+
+        <table id="myTable">
+            <thead>
+                <tr><th style="width: 13%;" class="type">Statistic Type</th><th style="width: 25%;" class="comparison">Comparison</th><th class="insight">Insight</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pitching</td>
+                    <td>Batting Average Allowed and Runs Allowed</td>
+                    <td>
+                        Pitchers that allow a batting average of 0.245 or higher typically allow a higher number
+                        of runs per the number of hits allowed (75 innings played or more). For these pitchers,
+                        their runs allowed to hits allowed percentage is 40% or higher. This means that pitchers
+                        that allow a higher batting avergae will typically have a harder time with preventing
+                        runs. Pitchers that allow a batting average below 0.245 will typically allow less hits
+                        resulting in less runs allowed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Batting</td>
+                    <td>Batting Average and Home Runs</td>
+                    <td>
+                        Players that have a high batting average do not always hit a lot of home runs as well as
+                        players that hit a lot of home runs do not always have a high batting average. Players
+                        with a high batting average but low number of home runs are considered as contact hitters.
+                        These hitters attempt to hit the ball in play to get on base rather than attempting to hit
+                        a home run. Players with a high number of home runs but a low batting average are 
+                        considered as power hitters. These hitters attempt to hit home runs or for extra bases when
+                        at bat rather than trying to simply make contact. Players who have a high batting average
+                        and high number of home runs are considered to be excellent hitters.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Award</td>
+                    <td>Batting Champion and Batting Statistics</td>
+                    <td>
+                        Players that are recognized as the Batting Champion at the end of the season have the
+                        highest batting average in each league. These players always have at least a .300
+                        batting average. These players typically have an on base percentage of .350 or higher and
+                        slugging percentage of .400 of .400 or higher. The players also usually have at least 85
+                        runs created during the season (excluding the 2020 season).
+                    </td>
+                </tr>
+                <tr>
+                    <td>Award</td>
+                    <td>Cy Young Award and Pitching Statistics</td>
+                    <td>
+                        The Cy Young Award is given to the best pitcher in each league. These pitchers typically
+                        have a WAR of 5.0 or higher, an ERA lower than 3.00, and at least 180 strikeouts (excluding
+                        the 2020 season). These pitchers also usally allow less than 175 hits during the season.
+                        These pitchers are valuable because they are consistently able to prevent opposing batters
+                        from scoring too many runs.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pitching</td>
+                    <td>Earned Run Average, Strikeouts, Walks, and Errors</td>
+                    <td>
+                        Pitchers that have an ERA of 3.30 or lower typically have over 120 strikeouts, less than 60
+                        walks, and less than 70 errors. These players typically strikeout at least 20% of the
+                        batters they face and make less mistakes when attempting to get an out. These pitchers are
+                        usually more effective at preventing runs from being scored by opposing teams.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Batting</td>
+                    <td>Extra Base Hit Percentage, On-Base Percentage, and Runs Created per Game</td>
+                    <td>
+                        Players that have an extra base hit percentage of 9.50% or higher typically have at least a
+                        .310 on-base percentage and at least 5 runs created per game. This can be due to their
+                        ability to get on base and into scoring position more often than others. This can be
+                        valuable as they are able to get their team more runs for a higher chance of winning.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Award</td>
+                    <td>Hank Aaron Award and Batting Statistics</td>
+                    <td>
+                        The Hank Aaron Award is given to the best hitter in each league. These players typically
+                        have a batting average of at least .280. They also usually have an on base percentage of at
+                        least .375, slugging percentage of at least .550, hit at least 35 home runs, and at least
+                        100 RBIs (excluding the 2020 season). These players have great offensive performances
+                        throughout the season and contribute a lot of runs for their teams.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Batting</td>
+                    <td>Home Runs, Strikeouts, and Strikeout Percentage</td>
+                    <td>
+                        Players that have at least 25 home runs and 130 strikeouts typically have a strikeout
+                        percentage of at least 20.0%. These players typically swing for power rather than swinging
+                        for contact. Players that have at least 25 home runs and less than 130 strikeouts typically
+                        swing for contact and have strikeout percentage lower than 20.0%.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Award</td>
+                    <td>MVP Award and Player Statistics</td>
+                    <td>
+                        The Most Valuable Player Award is given to the best all-around player in each league.
+                        These players usually makes large contributions to their team offensively and defensively.
+                        These players typically have at least 6.0 Wins Above Replacement, a batting average of at
+                        least .300 (for non pitchers), an on base percentage of at least .370, and a slugging
+                        percentage of at least .550. The pitchers who have recieved the Most Valuable Player Award
+                        typically have an ERA of 3.20 or lower, at least 120 strikeouts. A good rule of thumb for
+                        players who may potentially win the Most Valuable Player Award is having a WAR of 6.0 or
+                        higher.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Team</td>
+                    <td>Payroll and Season Outcome</td>
+                    <td>
+                        A team's season outcome can be directly related to their payroll. In the past few
+                        seasons (excluding the 2020 season), 45 out of 54 teams who made it into postseason
+                        contention or farther typically had a payroll of at least $90,000,000. Teams that
+                        made it to the World Series typically had a payroll of at least $110,000,000. However,
+                        this is not always true for all teams as there are many teams with payrolls above
+                        $90,000,000 that were eliminated from postseason contention. There are 28 teams that
+                        had a payroll of at least $150,000,000 that were eliminated from postseason contention.
+                        This could be due to other factors not considered such as trades and injuries.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Team</td>
+                    <td>Payroll and Wins</td>
+                    <td>
+                        The number of wins that a team gets during a season can be directly related to their
+                        payroll. In the past few seasons (excluding the 2020 season), 55 out of 63 teams with
+                        85 wins or more typically had a payroll of at least $75,000,000. 19 out of 27 teams
+                        with 95 wins or more typically had a payroll of at least $100,000,000. There are several
+                        teams who have payrolls above $75,000,000 that had less than 85 wins in a season that
+                        could be due to other factors such as trades and injuries.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Award</td>
+                    <td>Pitching ERA Champion and Pitching Statistics</td>
+                    <td>
+                        Players that are recognized as the Pitching ERA Champion at the end of the season have the
+                        lowest ERA in each league. These pitchers typically have an ERA of 2.75 or lower, at least
+                        160 strikeouts, and less than 160 hits allowed. These players are excellent at preventing
+                        the opposing team from scoring runs.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pitching</td>
+                    <td>Wins Above Replacement and Situational Wins</td>
+                    <td>
+                        Pitchers with at least 1.5 situational wins typically have 2.5 wins above replacement or
+                        higher. This means that these pitchers are more valuable than other average pitchers and
+                        are more successful in tough situations. These situations can include closing out an inning
+                        with the bases loaded or striking out a power hitter with a runner in scoring position.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Batting</td>
+                    <td>Walks and Walk Percentage</td>
+                    <td>
+                        Players that have at least 90 walks typically have a walk percentage of 12.50% or higher.
+                        These players can be seen as having more plate discipline than others. This allows them to
+                        get on base more often off of balls than other batters who may swing at balls more often.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Batting</td>
+                    <td>Wins Above Replacement and Win Probability Added by Offensive Player</td>
+                    <td>
+                        Players that have a WAR of 2.5 or higher typically have a Win Probability Added of at least
+                        1.5. This means that these players regularly play well enough to increase their team's
+                        chances of winning. These players contribute a lot to their team's success whihc could
+                        include getting on base more often than other batters and scoring more runs. A good rule of
+                        thumb for WAR is that good players typically have a WAR of 3.0 or higher with potential Most
+                        Valuable Players having a WAR above 6.0. A good rule of thumb for Win Probability Added is
+                        that above average players have a WPA of 2.0 or higher.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pitching</td>
+                    <td>Wins Above Replacement and Win Probability Added by Pitcher</td>
+                    <td>
+                        Players that have a WAR of 2.0 or higher typically have a Win Probability Added of at least
+                        1.5. This means that these pitchers regularly play well enough to increase their team's
+                        chances of winning. These players contribute a lot to their team's success which could
+                        include reducing the amount of runs that opposing teams score. A good rule of thumb for WAR
+                        is that solid players typically have a WAR of 2.0 or higher with potential Most Valuable
+                        Players having a WAR above 6.0. A good rule of thumb for Win Probability Added is that
+                        above average players have a WPA of 2.0 or higher.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            /*Function used to filter the table by statistic type using a dropdown*/
+            function filterTable(){
+                /*Stores the header column that contains the statistic type*/
+                var dropdown=document.getElementById("statType");
+
+                /*Stores the value selected in the dropdown*/
+                var selectedValue=dropdown.value;
+                
+                /*Stores the html table*/
+                var table=document.getElementById("myTable");
+                /*Stores all of the rows in the table*/
+                var rows=table.getElementsByTagName("tr");
+
+                /*Loops through the table skipping the header*/
+                for(var i=1;i<rows.length;i++)
+                {
+                    /*Stores each individual row*/
+                    var row=rows[i];
+                    /*Stores the value of the statistic type from the current row*/
+                    var statType=row.cells[0].textContent.trim();
+
+                    /*Compares the value of the statistic type based on the the value in the dropdown*/
+                    if(selectedValue==="all" || statType===selectedValue)
+                    {
+                        /*If the selected statistic type matches a row, then display that row*/
+                        row.style.display="";
+                    }
+                    else {
+                        /*If the selected statistic type does not match a row, then do not display that row*/
+                        row.style.display="none";
+                    }
+                }
+            }
+        </script>
+    </div>
+
+    <div class="footer">
+        Alex Delicer
+        <br>
+        The College of Wooster
+        <br>
+        Phone: +1 470 429 1104
+        <br>
+        Email: adelicer24@wooster.edu
+    </div>
+</html>
